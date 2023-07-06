@@ -1,58 +1,29 @@
 
 import './Test.css'
 
-const students = [
-  {
-    company: 'Alfreds Futterkiste',
-    contact: 'Maria Anders',
-    country: 'Germany'
-  },
-  {
-    company: 'Centro comercial Moctezuma',
-    contact: 'Francisco Chang',
-    country: 'Mexico'
-  },
-  {
-    company: 'Ernst Handel',
-    contact: 'Roland Mendel',
-    country: 'Austria'
-  },
-  {
-    company: 'Island Trading',
-    contact: 'Helen Bennett',
-    country: 'UK'
-  },
-  {
-    company: 'Laughing Bacchus Winecellars',
-    contact: 'Yoshi Tannamuri',
-    country: 'Canada'
-  },
-  {
-    company: 'Magazzini Alimentari Riuniti',
-    contact: 'Giovanni Rovelli',
-    country: 'Italy'
-  }
-]
 
 function App() {
   return (
-    <>
-    <h1>Students</h1>
-    <table>
-      <tr>
-        <th>Company</th>
-        <th>Contact</th>
-        <th>Country</th>
-      </tr>
-      {students.map(student => (
-          <tr>
-            <td>{student.company}</td>
-            <td>{student.contact}</td>
-            <td>{student.country}</td>
-          </tr>
-        ))}
-    </table>
-    </>
+    <div className="container">
+      <div className="card">
+        <div className="card--header" />
+        <img
+          className="avatar"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_ums6Rp3LJDJZ4ClL81ZAa1x7Jos8YVCdKg&usqp=CAU"
+          alt="avatar"
+        />
+        <div className="card--body">
+          <div>
+            <p className="text-header">Văn Hùng</p>
+            <p className="text-sub">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry
+            </p>
+            <button className="btn third">FOLLOW</button>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 
